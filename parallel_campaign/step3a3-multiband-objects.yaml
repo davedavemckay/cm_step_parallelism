@@ -1,0 +1,52 @@
+includeConfigs:
+  - ${DRP_PIPE_DIR}/bps/clustering/LSSTCam/DRP-clustering.yaml
+  - ${DRP_PIPE_DIR}/bps/resources/LSSTCam/DRP.yaml
+  - ${DRP_PIPE_DIR}/bps/compression/LSSTCam/DRP-compression.yaml
+  - ${DRP_PIPE_DIR}/bps/caching/LSSTCam/LANCS/DRP-caching.yaml
+  - htc-remote.yaml
+
+# Wave 7 (Parallel with step4a2-diffim and step4c1-pretty-coadds):
+# Multiband Object detection merge, Scarlet deblending, deconvolution, MultiProFit (PSF/Exp/Sersic),
+# unforced & forced measurement, patch_postprocess (object_patch), consolidateObject (object_all),
+# HealSparse property maps, and metadetectionShear.
+# Preserves deconvolve_tract_band, measureObjectUnforced_tract_band, fitDeepCoaddPsfGaussians_tract_band,
+# measureObjectForced_tract_band, patch_postprocess, and property_maps clusters.
+pipelineYaml: "${DRP_PIPE_DIR}/pipelines/LSSTCam/DRP.yaml#step3a-coadd-tracts"
+
+priority: 999
+
+wmsConfig:
+  DAGMAN_AGGRESSIVE_SUBMIT: true
+  DAGMAN_MAX_JOBS_IDLE: 50000
+
+payload:
+  runInit: true
+  payloadName: lsstcam_drp
+  butlerConfig: "dp2_prep"
+  inCollection: u/dmckayuk/{lsstVersion}/tracking_test/pll_steps
+  output: u/dmckayuk/{lsstVersion}/tracking_test/pll_steps
+  dataQuery: >-
+    instrument='LSSTCam' and skymap='lsst_cells_v2' and tract in (2234)
+
+numberOfRetries: 4
+retryUnlessExit: [2]
+memoryMultiplier: 2
+overwriteJobFiles: false
+
+finalJob:
+  requestCpus: 16
+  requestMemory: 160000
+  numberOfRetries: 5
+
+extraRunQuantumOptions: "--no-raise-on-partial-outputs"
+extraQgraphOptions: "--select-tasks '~makeDirectWarp & ~makePsfMatchedWarp & ~selectDeepCoaddVisits & ~assembleDeepCoadd & ~assembleCellCoadd & ~detectCoaddPeaks & ~selectTemplateCoaddVisits & ~assembleTemplateCoadd & ~makeBinnedCoaddImage & ~makeBinnedDeepNImage & ~makeBinnedTemplateNImage & ~makeWholeTractImage & ~makeWholeTractDeepNImage & ~makeWholeTractTemplateNImage & ~makeDeepCoaddInputSummaryTract & ~makeTemplateCoaddInputSummaryTract' --dataset-query-constraint visit_summary,deep_coadd_cell_predetection"
+# extraQgraphOptions: "--select-tasks '~makeDirectWarp & ~makePsfMatchedWarp & ~selectDeepCoaddVisits & ~assembleDeepCoadd & ~assembleCellCoadd & ~detectCoaddPeaks & ~selectTemplateCoaddVisits & ~assembleTemplateCoadd & ~makeBinnedCoaddImage & ~makeBinnedDeepNImage & ~makeBinnedTemplateNImage & ~makeWholeTractImage & ~makeWholeTractDeepNImage & ~makeWholeTractTemplateNImage & ~makeDeepCoaddInputSummaryTract & ~makeTemplateCoaddInputSummaryTract' --dataset-query-constraint visit_summary,deep_coadd_cell_predetection --skip-existing-in {output} --clobber-outputs"
+
+lsstVersion: "w_2026_44"
+
+computeSite: LANCS
+
+buildQuantumGraph:
+  requestMemory: 128000
+project: dev
+campaign: tracking

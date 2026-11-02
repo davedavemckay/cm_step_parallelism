@@ -1,0 +1,49 @@
+includeConfigs:
+  - ${DRP_PIPE_DIR}/bps/clustering/LSSTCam/DRP-clustering.yaml
+  - ${DRP_PIPE_DIR}/bps/resources/LSSTCam/DRP.yaml
+  - ${DRP_PIPE_DIR}/bps/compression/LSSTCam/DRP-compression.yaml
+  - ${DRP_PIPE_DIR}/bps/caching/LSSTCam/LANCS/DRP-caching.yaml
+  - htc-remote.yaml
+
+# Wave 6/7 (Parallel): Subgraph 2 of step4c: Tract-level Source association QA.
+# Only requires step4a1-reprocess-skycorr.yaml (source_all) and step2e-step2f.yaml (visit_table, isolated_star_stellar_motions).
+# Does NOT require Stage 3 coadds (3a1, 3a2, 3a3), step4b, or step4a2-diffim!
+pipelineYaml: "${DRP_PIPE_DIR}/pipelines/LSSTCam/DRP.yaml#associateAnalysisSource,analyzeSourceAssociation"
+
+priority: 999
+
+wmsConfig:
+  DAGMAN_AGGRESSIVE_SUBMIT: true
+  DAGMAN_MAX_JOBS_IDLE: 50000
+
+payload:
+  runInit: true
+  payloadName: lsstcam_drp
+  butlerConfig: "dp2_prep"
+  inCollection: u/dmckayuk/{lsstVersion}/tracking_test/pll_steps
+  output: u/dmckayuk/{lsstVersion}/tracking_test/pll_steps
+  dataQuery: >-
+    instrument='LSSTCam' and skymap='lsst_cells_v2' and tract in (2234)
+
+numberOfRetries: 4
+retryUnlessExit: [2]
+memoryMultiplier: 2
+overwriteJobFiles: false
+
+finalJob:
+  requestCpus: 16
+  requestMemory: 160000
+  numberOfRetries: 5
+
+extraRunQuantumOptions: "--no-raise-on-partial-outputs"
+extraQgraphOptions: "--dataset-query-constraint source_all"
+# extraQgraphOptions: "--dataset-query-constraint source_all --skip-existing-in {output} --clobber-outputs"
+
+lsstVersion: "w_2026_44"
+
+computeSite: LANCS
+
+buildQuantumGraph:
+  requestMemory: 128000
+project: dev
+campaign: tracking

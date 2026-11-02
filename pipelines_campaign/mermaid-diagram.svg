@@ -1,0 +1,282 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1716.5674333333332 1977.0999999999995" width="1716.5674333333332" height="1977.0999999999995" style="--bg:#1F1F1F;--fg:#CCCCCC;--line:#CCCCCC;--accent:#0078D4;--muted:#CCCCCCCC;--surface:#181818;--border:#CCCCCC;background:var(--bg)">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<g class="subgraph" data-id="W1" data-label="Wave 1: Single-Visit Processing">
+  <rect x="857.2964999999998" y="40" width="293.28599999999994" height="113.80000000000001" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="857.2964999999998" y="40" width="293.28599999999994" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="869.2964999999998" y="54" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Wave 1: Single-Visit Processing</text>
+</g>
+<g class="subgraph" data-id="W2" data-label="Wave 2: Star Association + Astrometry (Parallel)">
+  <rect x="446.0080333333332" y="296.4" width="638.1469999999998" height="113.80000000000001" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="446.0080333333332" y="296.4" width="638.1469999999998" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="458.0080333333332" y="310.4" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Wave 2: Star Association + Astrometry (Parallel)</text>
+</g>
+<g class="subgraph" data-id="W3" data-label="Wave 3: Photometric Calibration (Runs Alongside step2c)">
+  <rect x="793.6411999999998" y="514.5" width="285.135" height="113.80000000000001" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="793.6411999999998" y="514.5" width="285.135" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="805.6411999999998" y="528.5" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Wave 3: Photometric Calibration (Runs Alongside step2c)</text>
+</g>
+<g class="subgraph" data-id="W4" data-label="Wave 4: Per-Visit Recalibration &amp; PSF Refit">
+  <rect x="751.2340666666665" y="756.6" width="440.0039999999999" height="113.80000000000001" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="751.2340666666665" y="756.6" width="440.0039999999999" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="763.2340666666665" y="770.6" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Wave 4: Per-Visit Recalibration &amp; PSF Refit</text>
+</g>
+<g class="subgraph" data-id="W5" data-label="Wave 5: Post-Recalibration 3-Way Split (Parallel)">
+  <rect x="182.63533333333334" y="998.6999999999999" width="997.8279999999997" height="149.8" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="182.63533333333334" y="998.6999999999999" width="997.8279999999997" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="194.63533333333334" y="1012.6999999999999" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Wave 5: Post-Recalibration 3-Way Split (Parallel)</text>
+</g>
+<g class="subgraph" data-id="W6" data-label="Wave 6: Monolithic Coadd Assembly &amp; Multiband Catalogs">
+  <rect x="496.5450499999999" y="1276.7999999999997" width="393.32099999999986" height="113.80000000000001" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="496.5450499999999" y="1276.7999999999997" width="393.32099999999986" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="508.5450499999999" y="1290.7999999999997" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Wave 6: Monolithic Coadd Assembly &amp; Multiband Catalogs</text>
+</g>
+<g class="subgraph" data-id="W7" data-label="Wave 7: PVI Reprocessing &amp; DiffIm + Global Coadd Summary (Parallel)">
+  <rect x="254.8236833333333" y="1518.8999999999996" width="1020.7989999999998" height="137.8" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="254.8236833333333" y="1518.8999999999996" width="1020.7989999999998" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="266.8236833333333" y="1532.8999999999996" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Wave 7: PVI Reprocessing &amp; DiffIm + Global Coadd Summary (Parallel)</text>
+</g>
+<g class="subgraph" data-id="W8" data-label="Wave 8: Final Forced Photometry, Pretty Coadds &amp; DIA Association">
+  <rect x="429.0532833333331" y="1799.2999999999995" width="707.8009999999998" height="137.8" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="429.0532833333331" y="1799.2999999999995" width="707.8009999999998" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="441.0532833333331" y="1813.2999999999995" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Wave 8: Final Forced Photometry, Pretty Coadds &amp; DIA Association</text>
+</g>
+<polyline class="edge" data-from="S1AB" data-to="S1CD" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="single_visit_star,
+preliminary_visit_summary" points="947.9496428571426,137.8 947.9496428571426,183.8 640.4455333333332,183.8 640.4455333333331,340.4" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="S1AB" data-to="S2C" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="preliminary_visit_summary,
+single_visit_star" points="985.2762142857141,137.8 985.2762142857141,195.8 874.1152833333331,195.8 874.1152833333331,278.4 957.519033333333,278.4 957.519033333333,340.4" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="S1AB" data-to="S2A" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="preliminary_visit_summary" points="1022.6027857142855,137.8 1022.6027857142855,278.4 1180.655033333333,278.4 1180.655033333333,484.5 978.3978666666665,484.5 978.3978666666665,558.5000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="S1CD" data-to="S2A" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="isolated_star" points="676.1330333333331,394.2 676.1330333333331,452.19999999999993 314.25849999999997,452.19999999999993 314.25849999999997,496.49999999999994 894.0195333333331,496.49999999999994 894.0195333333331,558.5000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="S1AB" data-to="S2D" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="preliminary_visit_image" points="1059.9293571428568,137.8 1059.929357142857,266.4 1341.9161999999997,266.4 1341.9161999999997,738.6 1093.6372666666664,738.6 1093.6372666666664,800.6" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="S1CD" data-to="S2D" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="isolated_star" points="604.7580333333331,394.2 604.7580333333331,440.19999999999993 255.071,440.19999999999993 255.071,738.5999999999999 848.8348666666665,738.5999999999999 848.8348666666666,800.6" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="S2A" data-to="S2D" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="fgcm_photoCalib / transmission" points="936.2086999999998,612.3 936.2086999999998,738.5999999999999 930.4356666666665,738.5999999999999 930.4356666666665,800.6" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="S2C" data-to="S2D" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="gbdesAstrometricFit" points="957.519033333333,394.2 957.519033333333,472.49999999999994 997.4395,472.49999999999994 997.4395,496.49999999999994 1159.7761999999998,496.49999999999994 1159.7761999999998,726.5999999999999 1012.0364666666665,726.5999999999999 1012.0364666666665,800.6" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="S1AB" data-to="S3A1" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="preliminary_visit_image" points="910.6230714285713,137.8 910.6230714285713,171.8 101,171.8 101,980.6999999999999 266.3446666666666,980.6999999999999 266.3446666666666,1066.6999999999998 583.6616666666666,1066.6999999999998 583.6616666666666,1078.6999999999998" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="S2D" data-to="S3A1" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="visit_summary" points="903.2353999999999,854.4 903.2353999999998,912.4 786.3740833333331,912.4 786.3740833333331,980.6999999999999 707.5599999999998,980.6999999999999 707.5599999999998,1078.6999999999998" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="S1CD" data-to="S2EF" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="preliminary_visit_table" points="533.3830333333332,394.2 533.3830333333332,428.19999999999993 185.34850000000006,428.19999999999993 185.34850000000006,968.6999999999998 276.3446666666666,968.6999999999998 276.3446666666666,1078.6999999999998" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="S2D" data-to="S2EF" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="recalibrated_star, visit_summary" points="835.2347333333332,854.4 835.2347333333332,900.4 398.6103333333333,900.4 398.6103333333333,980.6999999999999 354.054,980.6999999999999 354.054,1078.6999999999998" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="S1CD" data-to="S4B" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="preliminary_visit_table" points="747.5080333333331,394.2 747.5080333333331,484.49999999999994 372.65899999999993,484.49999999999994 372.65899999999993,726.5999999999999 305.11033333333336,726.5999999999999 305.11033333333336,980.6999999999998 344.05400000000003,980.6999999999998 344.054,1054.6999999999998 961.1266666666664,1054.6999999999998 961.1266666666664,1078.6999999999998" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="S2D" data-to="S4B" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="visit_summary" points="971.2360666666666,854.4 971.2360666666665,912.4 1008.674583333333,912.4 1008.674583333333,980.6999999999999 1062.7949999999996,980.6999999999999 1062.7949999999996,1078.6999999999998" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="S3A1" data-to="S3A2" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="direct_warp, psf_matched_warp" points="645.6108333333332,1132.4999999999998 645.6108333333332,1190.4999999999998 632.9853833333332,1190.4999999999998 632.9853833333332,1320.7999999999997" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="S2D" data-to="S3A2" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="visit_summary" points="1039.2367333333332,854.4 1039.2367333333332,912.4 1377.8054166666666,912.4 1377.8054166666666,1258.7999999999997 753.4257166666664,1258.7999999999997 753.4257166666665,1320.7999999999997" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="S3A2" data-to="S4A" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="template_coadd, object_patch" points="729.3376499999999,1374.5999999999997 729.3376499999999,1432.5999999999997 761.6959666666664,1432.5999999999997 761.6959666666664,1500.8999999999996 1002.8160833333332,1500.8999999999996 1002.8160833333332,1586.8999999999996" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="S2EF" data-to="S4A" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="isolated_star_stellar_motions,
+visit_table" points="354.054,1132.4999999999998 354.054,1385.9999999999998 288.5423166666667,1385.9999999999998 288.5423166666667,1500.8999999999996 379.9811833333333,1500.8999999999996 379.9811833333333,1574.8999999999996 917.2138833333331,1574.8999999999996 917.2138833333331,1586.8999999999996" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="S1AB" data-to="S4A" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="preliminary_visit_image" points="1097.2559285714283,137.8 1097.2559285714283,254.4 1616.245433333333,254.4 1616.245433333333,1488.8999999999996 1174.020483333333,1488.8999999999996 1174.020483333333,1586.8999999999996" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="S2D" data-to="S4A" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="visit_summary" points="1107.2374,854.4 1107.2374,900.4 1436.8057499999998,900.4 1436.8057499999998,1476.8999999999996 1088.418283333333,1476.8999999999996 1088.418283333333,1586.8999999999996" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="S3A2" data-to="S3B" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="deep_coadd, object_all" points="584.8092499999999,1374.5999999999997 584.8092499999999,1420.5999999999997 378.4986166666667,1420.5999999999997 378.4986166666667,1488.8999999999996 389.9811833333334,1488.8999999999996 389.9811833333334,1586.8999999999996" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="S3A2" data-to="S3BC" data-style="dotted" data-arrow-start="false" data-arrow-end="true" data-label="deep_coadd" points="657.0734499999999,1374.5999999999997 657.0734499999999,1432.5999999999997 541.3716166666666,1432.5999999999997 541.3716166666666,1500.8999999999996 670.3751833333333,1500.8999999999996 670.3751833333333,1586.8999999999996" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="S3BC" data-to="S3D" data-style="dotted" data-arrow-start="false" data-arrow-end="true" data-label="deep_coadd_gray" points="670.3751833333332,1640.6999999999996 670.3751833333332,1712.9999999999995 719.9639833333331,1712.9999999999995 719.9639833333331,1781.2999999999995 545.6857833333331,1781.2999999999995 545.6857833333331,1867.2999999999993" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="S4A" data-to="S4C" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="visit_image, difference_image,
+dia_source_visit, skyCorr" points="1045.617183333333,1640.6999999999996 1045.617183333333,1698.6999999999996 925.7771833333331,1698.6999999999996 925.7771833333331,1781.2999999999995 852.932683333333,1781.2999999999995 852.9326833333331,1867.2999999999993" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="S4B" data-to="S4C" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="ss_ephemerides" points="1011.9608333333331,1132.4999999999998 1011.9608333333331,1246.7999999999997 1273.2464833333331,1246.7999999999997 1273.2464833333331,1464.8999999999996 1521.074683333333,1464.8999999999996 1521.074683333333,1781.2999999999995 1031.547083333333,1781.2999999999995 1031.547083333333,1867.2999999999993" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="S3A2" data-to="S4C" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="object_patch, deep_coadd_visit_selection" points="801.6018499999998,1374.5999999999997 801.6018499999998,1432.5999999999997 1188.520483333333,1432.5999999999997 1188.520483333333,1500.8999999999996 1407.622683333333,1500.8999999999996 1407.622683333333,1769.2999999999995 942.239883333333,1769.2999999999995 942.2398833333331,1867.2999999999993" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="S2EF" data-to="S4C" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="visit_table, stellar_motions" points="276.3446666666667,1132.4999999999998 276.3446666666667,1385.9999999999998 176.96356666666668,1385.9999999999998 176.96356666666668,1781.2999999999995 535.6857833333331,1781.2999999999995 535.6857833333331,1855.2999999999993 763.625483333333,1855.2999999999993 763.625483333333,1867.2999999999993" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="edge-label" data-from="S1AB" data-to="S1CD" data-label="single_visit_star,
+preliminary_visit_summary">
+  <rect x="567.9455333333332" y="202.8" width="144.76600000000002" height="44.6" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="640.3285333333332" y="225.10000000000002" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)"><tspan x="640.3285333333332" dy="-3.3000000000000007">single_visit_star,</tspan><tspan x="640.3285333333332" dy="14.3">preliminary_visit_summary</tspan></text>
+</g>
+<g class="edge-label" data-from="S1AB" data-to="S2C" data-label="preliminary_visit_summary,
+single_visit_star">
+  <rect x="800.1152833333331" y="202.8" width="147.14200000000002" height="44.6" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="873.6862833333331" y="225.10000000000002" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)"><tspan x="873.6862833333331" dy="-3.3000000000000007">preliminary_visit_summary,</tspan><tspan x="873.6862833333331" dy="14.3">single_visit_star</tspan></text>
+</g>
+<g class="edge-label" data-from="S1AB" data-to="S2A" data-label="preliminary_visit_summary">
+  <rect x="1108.155033333333" y="447.20000000000005" width="144.76600000000002" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1180.538033333333" y="462.35" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">preliminary_visit_summary</text>
+</g>
+<g class="edge-label" data-from="S1CD" data-to="S2A" data-label="isolated_star">
+  <rect x="274.25849999999997" y="459.20000000000005" width="79.42600000000002" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="313.9715" y="474.35" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">isolated_star</text>
+</g>
+<g class="edge-label" data-from="S1AB" data-to="S2D" data-label="preliminary_visit_image">
+  <rect x="1276.9161999999997" y="701.3000000000001" width="129.322" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1341.5771999999997" y="716.45" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">preliminary_visit_image</text>
+</g>
+<g class="edge-label" data-from="S1CD" data-to="S2D" data-label="isolated_star">
+  <rect x="215.07099999999997" y="701.3000000000001" width="79.42600000000002" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="254.784" y="716.45" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">isolated_star</text>
+</g>
+<g class="edge-label" data-from="S2A" data-to="S2D" data-label="fgcm_photoCalib / transmission">
+  <rect x="855.2086999999998" y="677.3000000000001" width="161.99200000000002" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="936.2046999999998" y="692.45" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">fgcm_photoCalib / transmission</text>
+</g>
+<g class="edge-label" data-from="S2C" data-to="S2D" data-label="gbdesAstrometricFit">
+  <rect x="1102.7761999999998" y="677.3000000000001" width="113.878" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1159.7151999999999" y="692.45" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">gbdesAstrometricFit</text>
+</g>
+<g class="edge-label" data-from="S1AB" data-to="S3A1" data-label="preliminary_visit_image">
+  <rect x="36" y="887.1" width="129.322" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="100.661" y="902.25" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">preliminary_visit_image</text>
+</g>
+<g class="edge-label" data-from="S2D" data-to="S3A1" data-label="visit_summary">
+  <rect x="743.3740833333331" y="919.4" width="85.36600000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="786.0570833333331" y="934.55" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">visit_summary</text>
+</g>
+<g class="edge-label" data-from="S1CD" data-to="S2EF" data-label="preliminary_visit_table">
+  <rect x="122.84850000000006" y="919.3999999999999" width="124.57000000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="185.13350000000005" y="934.5499999999998" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">preliminary_visit_table</text>
+</g>
+<g class="edge-label" data-from="S2D" data-to="S2EF" data-label="recalibrated_star, visit_summary">
+  <rect x="312.1103333333334" y="919.4" width="172.684" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="398.4523333333334" y="934.55" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">recalibrated_star, visit_summary</text>
+</g>
+<g class="edge-label" data-from="S1CD" data-to="S4B" data-label="preliminary_visit_table">
+  <rect x="310.15899999999993" y="689.3000000000001" width="124.57000000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="372.44399999999996" y="704.45" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">preliminary_visit_table</text>
+</g>
+<g class="edge-label" data-from="S2D" data-to="S4B" data-label="visit_summary">
+  <rect x="965.674583333333" y="919.4" width="85.36600000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1008.357583333333" y="934.55" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">visit_summary</text>
+</g>
+<g class="edge-label" data-from="S3A1" data-to="S3A2" data-label="direct_warp, psf_matched_warp">
+  <rect x="548.9853833333332" y="1197.4999999999998" width="167.93200000000002" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="632.9513833333332" y="1212.6499999999999" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">direct_warp, psf_matched_warp</text>
+</g>
+<g class="edge-label" data-from="S2D" data-to="S3A2" data-label="visit_summary">
+  <rect x="1334.8054166666666" y="1221.4999999999998" width="85.36600000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1377.4884166666666" y="1236.6499999999999" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">visit_summary</text>
+</g>
+<g class="edge-label" data-from="S3A2" data-to="S4A" data-label="template_coadd, object_patch">
+  <rect x="683.1959666666664" y="1439.5999999999997" width="156.052" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="761.2219666666664" y="1454.7499999999998" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">template_coadd, object_patch</text>
+</g>
+<g class="edge-label" data-from="S2EF" data-to="S4A" data-label="isolated_star_stellar_motions,
+visit_table">
+  <rect x="208.54231666666666" y="1392.9999999999995" width="159.022" height="44.6" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="288.05331666666666" y="1415.2999999999995" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)"><tspan x="288.05331666666666" dy="-3.3000000000000007">isolated_star_stellar_motions,</tspan><tspan x="288.05331666666666" dy="14.3">visit_table</tspan></text>
+</g>
+<g class="edge-label" data-from="S1AB" data-to="S4A" data-label="preliminary_visit_image">
+  <rect x="1551.245433333333" y="1451.5999999999997" width="129.322" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1615.906433333333" y="1466.7499999999998" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">preliminary_visit_image</text>
+</g>
+<g class="edge-label" data-from="S2D" data-to="S4A" data-label="visit_summary">
+  <rect x="1393.80575" y="1427.5999999999997" width="85.36600000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1436.48875" y="1442.7499999999998" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">visit_summary</text>
+</g>
+<g class="edge-label" data-from="S3A2" data-to="S3B" data-label="deep_coadd, object_all">
+  <rect x="314.9986166666667" y="1439.5999999999997" width="126.35199999999999" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="378.1746166666667" y="1454.7499999999998" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">deep_coadd, object_all</text>
+</g>
+<g class="edge-label" data-from="S3A2" data-to="S3BC" data-label="deep_coadd">
+  <rect x="502.3716166666667" y="1439.5999999999997" width="77.05000000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="540.8966166666667" y="1454.7499999999998" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">deep_coadd</text>
+</g>
+<g class="edge-label" data-from="S3BC" data-to="S3D" data-label="deep_coadd_gray">
+  <rect x="666.9639833333331" y="1719.9999999999995" width="105.56200000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="719.744983333333" y="1735.1499999999996" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">deep_coadd_gray</text>
+</g>
+<g class="edge-label" data-from="S4A" data-to="S4C" data-label="visit_image, difference_image,
+dia_source_visit, skyCorr">
+  <rect x="846.7771833333331" y="1705.6999999999996" width="157.24" height="44.6" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="925.3971833333331" y="1727.9999999999995" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)"><tspan x="925.3971833333331" dy="-3.3000000000000007">visit_image, difference_image,</tspan><tspan x="925.3971833333331" dy="14.3">dia_source_visit, skyCorr</tspan></text>
+</g>
+<g class="edge-label" data-from="S4B" data-to="S4C" data-label="ss_ephemerides">
+  <rect x="1224.2464833333333" y="1427.5999999999995" width="97.24600000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1272.8694833333334" y="1442.7499999999995" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">ss_ephemerides</text>
+</g>
+<g class="edge-label" data-from="S3A2" data-to="S4C" data-label="object_patch, deep_coadd_visit_selection">
+  <rect x="1299.622683333333" y="1731.9999999999995" width="215.452" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1407.3486833333332" y="1747.1499999999996" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">object_patch, deep_coadd_visit_selection</text>
+</g>
+<g class="edge-label" data-from="S2EF" data-to="S4C" data-label="visit_table, stellar_motions">
+  <rect x="106.46356666666668" y="1743.9999999999995" width="140.608" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="176.76756666666668" y="1759.1499999999996" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">visit_table, stellar_motions</text>
+</g>
+<g class="node" data-id="S1AB" data-label="step1a-step1b.yaml
+(Clusters: step1detector, step1b_visits)" data-shape="rectangle">
+  <rect x="873.2964999999998" y="84" width="261.28599999999994" height="53.800000000000004" rx="0" ry="0" fill="#1e3a8a" stroke="#60a5fa" stroke-width="2px" />
+  <text x="1003.9394999999997" y="110.9" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff"><tspan x="1003.9394999999997" dy="-3.9000000000000012">step1a-step1b.yaml</tspan><tspan x="1003.9394999999997" dy="16.900000000000002">(Clusters: step1detector, step1b_visits)</tspan></text>
+</g>
+<g class="node" data-id="S1CD" data-label="step1c_step1d.yaml
+(associateIsolatedStar + 60 GB QA +prelim_visit_table)" data-shape="rectangle">
+  <rect x="462.0080333333332" y="340.4" width="356.8749999999999" height="53.800000000000004" rx="0" ry="0" fill="#1e3a8a" stroke="#60a5fa" stroke-width="2px" />
+  <text x="640.4455333333331" y="367.29999999999995" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff"><tspan x="640.4455333333331" dy="-3.9000000000000012">step1c_step1d.yaml</tspan><tspan x="640.4455333333331" dy="16.900000000000002">(associateIsolatedStar + 60 GB QA +prelim_visit_table)</tspan></text>
+</g>
+<g class="node" data-id="S2C" data-label="step2c.yaml
+(gbdesHealpix3AstrometricFit)" data-shape="rectangle">
+  <rect x="846.8830333333331" y="340.4" width="221.27199999999993" height="53.800000000000004" rx="0" ry="0" fill="#065f46" stroke="#34d399" stroke-width="2px" />
+  <text x="957.519033333333" y="367.29999999999995" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff"><tspan x="957.519033333333" dy="-3.9000000000000012">step2c.yaml</tspan><tspan x="957.519033333333" dy="16.900000000000002">(gbdesHealpix3AstrometricFit)</tspan></text>
+</g>
+<g class="node" data-id="S2A" data-label="step2a.yaml
+(FGCM Global Fit - 60 CPUs / 480 GB)" data-shape="rectangle">
+  <rect x="809.6411999999998" y="558.5" width="253.135" height="53.800000000000004" rx="0" ry="0" fill="#581c87" stroke="#c084fc" stroke-width="2px" />
+  <text x="936.2086999999998" y="585.4" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff"><tspan x="936.2086999999998" dy="-3.9000000000000012">step2a.yaml</tspan><tspan x="936.2086999999998" dy="16.900000000000002">(FGCM Global Fit - 60 CPUs / 480 GB)</tspan></text>
+</g>
+<g class="node" data-id="S2D" data-label="step2d.yaml
+(Clusters: step2d_refitpsf, step2d_visits + updateVisitSummary)" data-shape="rectangle">
+  <rect x="767.2340666666665" y="800.6" width="408.0039999999999" height="53.800000000000004" rx="0" ry="0" fill="#1e3a8a" stroke="#60a5fa" stroke-width="2px" />
+  <text x="971.2360666666665" y="827.5" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff"><tspan x="971.2360666666665" dy="-3.9000000000000012">step2d.yaml</tspan><tspan x="971.2360666666665" dy="16.900000000000002">(Clusters: step2d_refitpsf, step2d_visits + updateVisitSummary)</tspan></text>
+</g>
+<g class="node" data-id="S3A1" data-label="step3a1-warps.yaml
+(Cluster: makeWarpTract - Direct &amp; PSF-Matched Warps)" data-shape="rectangle">
+  <rect x="459.7633333333333" y="1078.6999999999998" width="371.6949999999999" height="53.800000000000004" rx="0" ry="0" fill="#1e3a8a" stroke="#60a5fa" stroke-width="2px" />
+  <text x="645.6108333333333" y="1105.6" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff"><tspan x="645.6108333333333" dy="-3.9000000000000012">step3a1-warps.yaml</tspan><tspan x="645.6108333333333" dy="16.900000000000002">(Cluster: makeWarpTract - Direct &amp; PSF-Matched Warps)</tspan></text>
+</g>
+<g class="node" data-id="S2EF" data-label="step2e-step2f.yaml
+(fitStellarMotion + final visit_table)" data-shape="rectangle">
+  <rect x="198.63533333333334" y="1078.6999999999998" width="233.12799999999996" height="53.800000000000004" rx="0" ry="0" fill="#065f46" stroke="#34d399" stroke-width="2px" />
+  <text x="315.1993333333333" y="1105.6" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff"><tspan x="315.1993333333333" dy="-3.9000000000000012">step2e-step2f.yaml</tspan><tspan x="315.1993333333333" dy="16.900000000000002">(fitStellarMotion + final visit_table)</tspan></text>
+</g>
+<g class="node" data-id="S4B" data-label="step4b.yaml
+(generateEphemerides - Solar System Orbits)" data-shape="rectangle">
+  <rect x="859.4583333333333" y="1078.6999999999998" width="305.0049999999999" height="53.800000000000004" rx="0" ry="0" fill="#065f46" stroke="#34d399" stroke-width="2px" />
+  <text x="1011.9608333333332" y="1105.6" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff"><tspan x="1011.9608333333332" dy="-3.9000000000000012">step4b.yaml</tspan><tspan x="1011.9608333333332" dy="16.900000000000002">(generateEphemerides - Solar System Orbits)</tspan></text>
+</g>
+<g class="node" data-id="S3A2" data-label="step3a2-coadds.yaml
+(Cluster: coadd + Scarlet + MultiProFit + Object Catalog)" data-shape="rectangle">
+  <rect x="512.54505" y="1320.7999999999997" width="361.32099999999986" height="53.800000000000004" rx="0" ry="0" fill="#1e3a8a" stroke="#60a5fa" stroke-width="2px" />
+  <text x="693.2055499999999" y="1347.6999999999998" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff"><tspan x="693.2055499999999" dy="-3.9000000000000012">step3a2-coadds.yaml</tspan><tspan x="693.2055499999999" dy="16.900000000000002">(Cluster: coadd + Scarlet + MultiProFit + Object Catalog)</tspan></text>
+</g>
+<g class="node" data-id="S4A" data-label="step4a.yaml
+(Clusters: skyCorrCluster, step4a_reprocess, diffim + Star/Obj QA)" data-shape="rectangle">
+  <rect x="831.6116833333332" y="1586.8999999999996" width="428.01099999999985" height="53.800000000000004" rx="0" ry="0" fill="#1e3a8a" stroke="#60a5fa" stroke-width="2px" />
+  <text x="1045.617183333333" y="1613.7999999999997" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff"><tspan x="1045.617183333333" dy="-3.9000000000000012">step4a.yaml</tspan><tspan x="1045.617183333333" dy="16.900000000000002">(Clusters: skyCorrCluster, step4a_reprocess, diffim + Star/Obj QA)</tspan></text>
+</g>
+<g class="node" data-id="S3B" data-label="step3b.yaml
+(Terminal Global Coadd Summary)" data-shape="rectangle">
+  <rect x="270.8236833333333" y="1586.8999999999996" width="238.31499999999997" height="53.800000000000004" rx="0" ry="0" fill="#78350f" stroke="#fbbf24" stroke-width="2px" />
+  <text x="389.98118333333326" y="1613.7999999999997" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff"><tspan x="389.98118333333326" dy="-3.9000000000000012">step3b.yaml</tspan><tspan x="389.98118333333326" dy="16.900000000000002">(Terminal Global Coadd Summary)</tspan></text>
+</g>
+<g class="node" data-id="S3BC" data-label="step3b-step3c.yaml
+(Optional USDF: Global + Gray Coadds)" data-shape="rectangle">
+  <rect x="537.1386833333332" y="1586.8999999999996" width="266.47299999999996" height="53.800000000000004" rx="0" ry="0" fill="#374151" stroke="#9ca3af" stroke-width="2px" />
+  <text x="670.3751833333332" y="1613.7999999999997" text-anchor="middle" font-size="13" font-weight="500" fill="#e5e7eb"><tspan x="670.3751833333332" dy="-3.9000000000000012">step3b-step3c.yaml</tspan><tspan x="670.3751833333332" dy="16.900000000000002">(Optional USDF: Global + Gray Coadds)</tspan></text>
+</g>
+<g class="node" data-id="S4C" data-label="step4c.yaml
+(Clusters: association, forced_phot_dia, forced_phot + Pretty Coadds)" data-shape="rectangle">
+  <rect x="674.318283333333" y="1867.2999999999995" width="446.5359999999999" height="53.800000000000004" rx="0" ry="0" fill="#78350f" stroke="#fbbf24" stroke-width="2px" />
+  <text x="897.586283333333" y="1894.1999999999996" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff"><tspan x="897.586283333333" dy="-3.9000000000000012">step4c.yaml</tspan><tspan x="897.586283333333" dy="16.900000000000002">(Clusters: association, forced_phot_dia, forced_phot + Pretty Coadds)</tspan></text>
+</g>
+<g class="node" data-id="S3D" data-label="step3d.yaml
+(Optional USDF: HiPS Tiles)" data-shape="rectangle">
+  <rect x="445.0532833333331" y="1867.2999999999995" width="201.26499999999993" height="53.800000000000004" rx="0" ry="0" fill="#374151" stroke="#9ca3af" stroke-width="2px" />
+  <text x="545.6857833333331" y="1894.1999999999996" text-anchor="middle" font-size="13" font-weight="500" fill="#e5e7eb"><tspan x="545.6857833333331" dy="-3.9000000000000012">step3d.yaml</tspan><tspan x="545.6857833333331" dy="16.900000000000002">(Optional USDF: HiPS Tiles)</tspan></text>
+</g>
+</svg>

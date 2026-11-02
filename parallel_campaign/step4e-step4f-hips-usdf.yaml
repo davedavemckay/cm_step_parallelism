@@ -1,0 +1,48 @@
+includeConfigs:
+  - ${DRP_PIPE_DIR}/bps/clustering/LSSTCam/DRP-clustering.yaml
+  - ${DRP_PIPE_DIR}/bps/resources/LSSTCam/DRP.yaml
+  - ${DRP_PIPE_DIR}/bps/compression/LSSTCam/DRP-compression.yaml
+  - ${DRP_PIPE_DIR}/bps/caching/LSSTCam/usdf/DRP-caching.yaml
+
+# Optional USDF-Local Terminal Leaf (Wave 8+): Pretty coadd RGB images (step4e) + multi-color GRI HiPS tiles (step4f).
+# Because HiPS images are not generated at remote sites (LANCS), this YAML is configured for local USDF
+# execution (using usdf/DRP-caching.yaml and omitting htc-remote.yaml / computeSite: LANCS).
+# Only requires pretty_coadd from step4c1-pretty-coadds.yaml -- does NOT require step4a2-diffim, step4b,
+# step4c2, step4c3, step4c4, step4d, or step3a3-multiband-objects! Can be skipped at remote sites with zero impact.
+pipelineYaml: "${DRP_PIPE_DIR}/pipelines/LSSTCam/DRP.yaml#step4e-measure-variability-rgb,step4f-make-hips-from-rgb"
+
+priority: 999
+
+wmsConfig:
+  DAGMAN_AGGRESSIVE_SUBMIT: true
+  DAGMAN_MAX_JOBS_IDLE: 50000
+
+payload:
+  runInit: true
+  payloadName: lsstcam_drp
+  butlerConfig: "dp2_prep"
+  inCollection: u/dmckayuk/{lsstVersion}/tracking_test/pll_steps
+  output: u/dmckayuk/{lsstVersion}/tracking_test/pll_steps
+  dataQuery: >-
+    instrument='LSSTCam' and skymap='lsst_cells_v2' and tract in (2234)
+
+numberOfRetries: 4
+retryUnlessExit: [2]
+memoryMultiplier: 2
+overwriteJobFiles: false
+
+finalJob:
+  requestCpus: 16
+  requestMemory: 160000
+  numberOfRetries: 5
+
+extraRunQuantumOptions: "--no-raise-on-partial-outputs"
+extraQgraphOptions: "--dataset-query-constraint pretty_coadd"
+# extraQgraphOptions: "--dataset-query-constraint pretty_coadd --skip-existing-in {output} --clobber-outputs"
+
+lsstVersion: "w_2026_44"
+
+buildQuantumGraph:
+  requestMemory: 128000
+project: dev
+campaign: tracking

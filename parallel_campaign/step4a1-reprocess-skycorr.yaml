@@ -1,0 +1,52 @@
+includeConfigs:
+  - ${DRP_PIPE_DIR}/bps/clustering/LSSTCam/DRP-clustering.yaml
+  - ${DRP_PIPE_DIR}/bps/resources/LSSTCam/DRP.yaml
+  - ${DRP_PIPE_DIR}/bps/compression/LSSTCam/DRP-compression.yaml
+  - ${DRP_PIPE_DIR}/bps/caching/LSSTCam/LANCS/DRP-caching.yaml
+  - htc-remote.yaml
+
+# Wave 5 (Parallel with step2e-step2f, step3a1-warps, and step4b):
+# Full-focal-plane sky correction (skyCorrCluster) + visit image reprocessing & Source catalog
+# standardization/consolidation (step4a_reprocess_standardize cluster).
+# Only requires step1a (post_isr_image, preliminary_visit_image, preliminary_visit_image_background,
+# preliminary_visit_mask) and step2d (visit_summary, refit_psf_star) -- does NOT require Stage 3 coadds!
+# Running this in Wave 5 produces visit_image, skyCorr, and source_all while Stage 3 warps/coadds run.
+pipelineYaml: "${DRP_PIPE_DIR}/pipelines/LSSTCam/DRP.yaml#skyCorr,reprocessVisitImage,standardizeSource,consolidateSource,splitPrimarySource"
+
+priority: 999
+
+wmsConfig:
+  DAGMAN_AGGRESSIVE_SUBMIT: true
+  DAGMAN_MAX_JOBS_IDLE: 50000
+
+payload:
+  runInit: true
+  payloadName: lsstcam_drp
+  butlerConfig: "dp2_prep"
+  inCollection: u/dmckayuk/{lsstVersion}/tracking_test/pll_steps
+  output: u/dmckayuk/{lsstVersion}/tracking_test/pll_steps
+  dataQuery: >-
+    instrument='LSSTCam' and skymap='lsst_cells_v2' and tract in (2234)
+
+numberOfRetries: 4
+retryUnlessExit: [2]
+memoryMultiplier: 2
+overwriteJobFiles: false
+
+finalJob:
+  requestCpus: 16
+  requestMemory: 160000
+  numberOfRetries: 5
+
+extraRunQuantumOptions: "--no-raise-on-partial-outputs"
+extraQgraphOptions: "--dataset-query-constraint visit_summary,preliminary_visit_image"
+# extraQgraphOptions: "--dataset-query-constraint visit_summary,preliminary_visit_image --skip-existing-in {output} --clobber-outputs"
+
+lsstVersion: "w_2026_44"
+
+computeSite: LANCS
+
+buildQuantumGraph:
+  requestMemory: 128000
+project: dev
+campaign: tracking

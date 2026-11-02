@@ -1,0 +1,30 @@
+wmsServiceClass: "lsst.ctrl.bps.htcondor.HTCondorService"
+
+# Local SLAC submissions do not use the new k8 AP node. So
+# need to set this here instead of ctrl_bps_htcondor defaults.
+preparePayloadWorkflow:
+  computeSite: BPS_SUBMIT
+
+
+site:
+  IN2P3:
+    nodeset: "IN2P3"
+    fileDistributionEndpoint: "${LSST_RUN_TEMP_SPACE}/bps_dev/payload/{uniqProcName}/"
+    bpsBatchSubmission: true
+    bpsUseRunTempSpace: true
+    bpsUseShared: false
+    bpsMakeCommand: false
+  LANCS:
+    nodeset: "LANCS"
+    fileDistributionEndpoint: "${LSST_RUN_TEMP_SPACE}/bps_dev/payload/{uniqProcName}/"
+    bpsBatchSubmission: true
+    bpsUseRunTempSpace: true
+    bpsUseShared: false
+    bpsMakeCommand: false
+  RAL:
+    nodeset: "RAL"
+    fileDistributionEndpoint: "${LSST_RUN_TEMP_SPACE}/bps_dev/payload/{uniqProcName}/"
+    bpsBatchSubmission: true
+    bpsUseRunTempSpace: true
+    bpsUseShared: false
+    bpsMakeCommand: false

@@ -1,0 +1,51 @@
+includeConfigs:
+  - ${DRP_PIPE_DIR}/bps/clustering/LSSTCam/DRP-clustering.yaml
+  - ${DRP_PIPE_DIR}/bps/resources/LSSTCam/DRP.yaml
+  - ${DRP_PIPE_DIR}/bps/compression/LSSTCam/DRP-compression.yaml
+  - ${DRP_PIPE_DIR}/bps/caching/LSSTCam/LANCS/DRP-caching.yaml
+  - htc-remote.yaml
+
+# Wave 5 (Parallel with step3a1-warps, step4b, and step4a1-reprocess-skycorr):
+# Tract-level stellar motion fit (step2e) + global visit/detector tables & QA (step2f).
+# Requires step1a-step1b, step1c1, step1d1, and step2d.
+# Nothing in Stage 3 (3a1, 3a2, 3a3, 3b, 3c, 3d) or Stage 4 core (4a1, 4a2, 4b, 4c1, 4c3, 4c4) waits for this!
+# Only QA tasks step4c2-source-qa.yaml and step4a3-qa-star-object-match.yaml depend on step2e-step2f.
+pipelineYaml: "${DRP_PIPE_DIR}/pipelines/LSSTCam/DRP.yaml#step2e-recalibrate-tracts,step2f-recalibrate-global"
+
+priority: 999
+
+wmsConfig:
+  DAGMAN_AGGRESSIVE_SUBMIT: true
+  DAGMAN_MAX_JOBS_IDLE: 50000
+
+payload:
+  runInit: true
+  payloadName: lsstcam_drp
+  butlerConfig: "dp2_prep"
+  inCollection: u/dmckayuk/{lsstVersion}/tracking_test/pll_steps
+  output: u/dmckayuk/{lsstVersion}/tracking_test/pll_steps
+  dataQuery: >-
+    instrument='LSSTCam' and skymap='lsst_cells_v2' and tract in (2234)
+
+numberOfRetries: 4
+retryUnlessExit: [2]
+memoryMultiplier: 2
+overwriteJobFiles: false
+
+finalJob:
+  requestCpus: 16
+  requestMemory: 160000
+  numberOfRetries: 5
+
+extraRunQuantumOptions: "--no-raise-on-partial-outputs"
+extraQgraphOptions: "--dataset-query-constraint preliminary_visit_summary,visit_summary"
+# extraQgraphOptions: "--dataset-query-constraint preliminary_visit_summary,visit_summary --skip-existing-in {output} --clobber-outputs"
+
+lsstVersion: "w_2026_44"
+
+computeSite: LANCS
+
+buildQuantumGraph:
+  requestMemory: 128000
+project: dev
+campaign: tracking

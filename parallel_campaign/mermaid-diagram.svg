@@ -1,0 +1,420 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2554.039858333333 2300.3999999999996" width="2554.039858333333" height="2300.3999999999996" style="--bg:#1F1F1F;--fg:#CCCCCC;--line:#CCCCCC;--accent:#0078D4;--muted:#CCCCCCCC;--surface:#181818;--border:#CCCCCC;background:var(--bg)">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<g class="subgraph" data-id="W1" data-label="Wave 1: Single-Visit Processing">
+  <rect x="860.2679999999997" y="40" width="293.28599999999994" height="113.80000000000001" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="860.2679999999997" y="40" width="293.28599999999994" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="872.2679999999997" y="54" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Wave 1: Single-Visit Processing</text>
+</g>
+<g class="subgraph" data-id="W2" data-label="Wave 2: Fast Star Assoc, Initial Visit Tables &amp; GBDES (3-Way Parallel)">
+  <rect x="342.8354166666665" y="308.4" width="777.0099999999999" height="113.80000000000001" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="342.8354166666665" y="308.4" width="777.0099999999999" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="354.8354166666665" y="322.4" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Wave 2: Fast Star Assoc, Initial Visit Tables &amp; GBDES (3-Way Parallel)</text>
+</g>
+<g class="subgraph" data-id="W3" data-label="Wave 3: FGCM Calibration + Stage 1 QA Leaf (Parallel with step2c)">
+  <rect x="763.7161666666665" y="550.5" width="625.55" height="113.80000000000001" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="763.7161666666665" y="550.5" width="625.55" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="775.7161666666665" y="564.5" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Wave 3: FGCM Calibration + Stage 1 QA Leaf (Parallel with step2c)</text>
+</g>
+<g class="subgraph" data-id="W4" data-label="Wave 4: Per-Visit Recalibration &amp; PSF Refit">
+  <rect x="835.0932166666665" y="792.6" width="440.0039999999999" height="113.80000000000001" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="835.0932166666665" y="792.6" width="440.0039999999999" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="847.0932166666665" y="806.6" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Wave 4: Per-Visit Recalibration &amp; PSF Refit</text>
+</g>
+<g class="subgraph" data-id="W5" data-label="Wave 5: Warps + PVI Reprocessing/SkyCorr + Ephemerides + Stellar Motion (4-Way Parallel)">
+  <rect x="542.4103833333332" y="1049" width="1146.3239999999998" height="161.8" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="542.4103833333332" y="1049" width="1146.3239999999998" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="554.4103833333332" y="1063" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Wave 5: Warps + PVI Reprocessing/SkyCorr + Ephemerides + Stellar Motion (4-Way Parallel)</text>
+</g>
+<g class="subgraph" data-id="W6" data-label="Wave 6: Coadd Image Assembly + Source Assoc QA (2-Way Parallel)">
+  <rect x="1114.71105" y="1353.3999999999999" width="607.766" height="113.80000000000001" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="1114.71105" y="1353.3999999999999" width="607.766" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="1126.71105" y="1367.3999999999999" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Wave 6: Coadd Image Assembly + Source Assoc QA (2-Way Parallel)</text>
+</g>
+<g class="subgraph" data-id="W7" data-label="Wave 7: DiffIm + Multiband Deblend/Fit + Pretty Coadds (3-Way Parallel)">
+  <rect x="758.9367083333333" y="1609.7999999999997" width="1325.6459999999997" height="137.8" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="758.9367083333333" y="1609.7999999999997" width="1325.6459999999997" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="770.9367083333333" y="1623.7999999999997" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Wave 7: DiffIm + Multiband Deblend/Fit + Pretty Coadds (3-Way Parallel)</text>
+</g>
+<g class="subgraph" data-id="W8" data-label="Wave 8: DIA Forced Phot + Object Forced Phot + Global/QA Leaves (4-Way Parallel)">
+  <rect x="529.0905416666667" y="1914.1999999999996" width="1712.7439999999997" height="113.80000000000001" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="529.0905416666667" y="1914.1999999999996" width="1712.7439999999997" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="541.0905416666667" y="1928.1999999999996" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Wave 8: DIA Forced Phot + Object Forced Phot + Global/QA Leaves (4-Way Parallel)</text>
+</g>
+<g class="subgraph" data-id="W9" data-label="Wave 9: Global Solar System &amp; Source Summary">
+  <rect x="568.9177166666667" y="2146.5999999999995" width="377.01899999999995" height="113.80000000000001" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="568.9177166666667" y="2146.5999999999995" width="377.01899999999995" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="580.9177166666667" y="2160.5999999999995" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Wave 9: Global Solar System &amp; Source Summary</text>
+</g>
+<polyline class="edge" data-from="P1AB" data-to="P1C1" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="single_visit_star" points="941.5894999999997,137.8 941.5894999999997,195.8 751.7179166666665,195.8 751.7179166666665,352.4" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P1AB" data-to="P1D1" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="preliminary_visit_summary" points="908.9287499999997,137.8 908.9287499999997,183.8 558.4004166666664,183.8 558.4004166666664,290.4 489.84891666666647,290.4 489.8489166666665,352.4" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P1AB" data-to="P2C" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="preliminary_visit_summary,
+single_visit_star" points="974.2502499999997,137.8 974.2502499999997,207.8 935.2426666666664,207.8 935.2426666666664,290.4 993.2094166666665,290.4 993.2094166666665,352.4" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P1AB" data-to="P2A" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="preliminary_visit_summary" points="1006.9109999999996,137.8 1006.9109999999997,207.8 1269.4116666666664,207.8 1269.4116666666664,532.5 1288.8878333333332,532.5 1288.8878333333332,594.5000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P1C1" data-to="P2A" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="isolated_star" points="803.1456666666663,406.2 803.1456666666664,452.19999999999993 1204.5095,452.19999999999993 1204.5095,594.5000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P1C1" data-to="P1QA" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="isolated_star_presources" points="751.7179166666665,406.2 751.7179166666664,464.19999999999993 857.3569166666665,464.19999999999993 857.3569166666665,532.5 935.9236666666666,532.5 935.9236666666666,594.5000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P1AB" data-to="P2D" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="preliminary_visit_image" points="1039.5717499999996,137.8 1039.5717499999996,195.8 1542.2661666666663,195.8 1542.2661666666663,774.6 1177.4964166666664,774.6 1177.4964166666664,836.6" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P1C1" data-to="P2D" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="isolated_star" points="700.2901666666664,406.2 700.2901666666666,774.5999999999999 932.6940166666666,774.5999999999999 932.6940166666666,836.6" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P2A" data-to="P2D" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="fgcm_photoCalib" points="1246.6986666666664,648.3 1246.6986666666662,750.5999999999999 1014.2948166666665,750.5999999999999 1014.2948166666665,836.6" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P2C" data-to="P2D" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="gbdesAstrometricFit" points="993.2094166666664,406.2 993.2094166666666,440.19999999999993 1470.2661666666665,440.19999999999993 1470.2661666666665,762.5999999999999 1095.8956166666665,762.5999999999999 1095.8956166666665,836.6" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P1AB" data-to="P3A1" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="preliminary_visit_image" points="1072.2324999999996,137.8 1072.2324999999996,183.8 1614.2661666666663,183.8 1614.2661666666663,1007.0000000000001 1173.10005,1007.0000000000001 1173.10005,1093" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P2D" data-to="P3A1" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="visit_summary" points="1055.0952166666666,890.4 1055.0952166666666,962.7000000000002 1070.187883333333,962.7000000000002 1070.187883333333,1031 1108.7287166666665,1031 1108.7287166666665,1093" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P1AB" data-to="P4A1" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="preliminary_visit_image,
+background" points="1104.8932499999996,137.8 1104.8932499999996,171.8 1748.5881666666664,171.8 1748.5881666666664,1031 1536.9800499999997,1031 1536.9800499999997,1093" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P2D" data-to="P4A1" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="visit_summary" points="1123.0958833333332,890.4 1123.095883333333,962.7000000000002 1664.2661666666663,962.7000000000002 1664.2661666666663,1019.0000000000001 1401.2257166666664,1019.0000000000001 1401.2257166666664,1093" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P1D1" data-to="P4B" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="preliminary_visit_table" points="446.17774999999983,406.2 446.17774999999983,942.4000000000001 389.4850583333332,942.4000000000001 389.4850583333332,1031 618.8297166666665,1031 618.8297166666666,1093" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P2D" data-to="P4B" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="visit_summary" points="919.0938833333332,890.4 919.0938833333332,948.4000000000001 459.7967249999999,948.4000000000001 459.7967249999999,1019.0000000000001 679.2490499999999,1019.0000000000001 679.2490499999999,1093" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P1D1" data-to="P2EF" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="preliminary_visit_table" points="533.5200833333331,406.2 533.5200833333331,904.1 569.6375583333332,904.1 569.6375583333332,1007 850.5647166666665,1007 850.5647166666665,1093" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P2D" data-to="P2EF" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="recalibrated_star,
+visit_summary" points="987.0945499999999,890.4 987.0945499999999,948.4000000000001 933.46105,948.4000000000001 933.4610499999999,1093" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P3A1" data-to="P3A2" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="direct_warp,
+psf_matched_warp" points="1173.10005,1146.8 1173.10005,1240.8 1437.2910499999998,1240.8 1437.2910499999998,1335.3999999999999 1496.7183833333333,1335.3999999999999 1496.7183833333333,1397.3999999999996" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P2D" data-to="P3A2" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="visit_summary" points="1191.09655,890.4 1191.0965499999998,950.7000000000002 1901.6799499999997,950.7000000000002 1901.6799499999997,1335.4 1601.5977166666667,1335.4 1601.5977166666667,1397.3999999999999" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P4A1" data-to="P4C2" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="source_all" points="1401.2257166666664,1146.8 1401.2257166666664,1170.8 1163.10005,1170.8 1163.10005,1252.8 1288.7400499999999,1252.8 1288.7400499999999,1335.3999999999999 1286.1297166666668,1335.3999999999999 1286.1297166666666,1397.3999999999996" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P2EF" data-to="P4C2" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="visit_table,
+stellar_motions" points="954.1851333333332,1146.8 954.1851333333332,1170.8 1118.7287166666665,1170.8 1118.7287166666665,1252.8 1156.7287166666665,1252.8 1156.7287166666665,1335.3999999999999 1208.4203833333331,1335.3999999999999 1208.4203833333331,1397.3999999999996" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P3A2" data-to="P4A2" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="template_coadd" points="1549.15805,1451.1999999999998 1549.15805,1523.4999999999998 1613.2570416666663,1523.4999999999998 1613.2570416666663,1653.7999999999997" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P4A1" data-to="P4A2" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="visit_image" points="1469.102883333333,1146.8 1469.102883333333,1252.8 2139.394274999999,1252.8 2139.394274999999,1523.4999999999998 1987.3214416666665,1523.4999999999998 1987.3214416666665,1567.7999999999997 1711.4673749999997,1567.7999999999997 1711.4673749999997,1653.7999999999997" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P3A2" data-to="P3A3" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="deep_coadd,
+cell_coadd" points="1444.2787166666665,1451.1999999999998 1444.2787166666665,1509.1999999999998 1240.908208333333,1509.1999999999998 1240.908208333333,1591.7999999999997 1039.0353749999997,1591.7999999999997 1039.0353749999995,1653.7999999999997" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P3A1" data-to="P3A3" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="direct_warp" points="1108.7287166666665,1146.8 1108.7287166666665,1452.8999999999999 1053.53705,1452.8999999999999 1053.53705,1579.7999999999997 1151.3835416666666,1579.7999999999997 1151.3835416666666,1579.7999999999997 906.9860416666666,1579.7999999999997 906.9860416666666,1653.7999999999997" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P3A2" data-to="P4C1" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="deep_coadd_visit_selection" points="1601.5977166666667,1451.1999999999998 1601.5977166666667,1511.4999999999998 2069.821441666666,1511.4999999999998 2069.821441666666,1579.7999999999997 1914.6460416666664,1579.7999999999997 1914.6460416666662,1653.7999999999997" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P4A1" data-to="P4C1" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="visit_image, skyCorr" points="1536.9800499999997,1146.8 1536.9800499999997,1240.8 2269.4582749999995,1240.8 2269.4582749999995,1523.4999999999998 2151.027441666666,1523.4999999999998 2151.027441666666,1591.7999999999997 1991.6143749999997,1591.7999999999997 1991.6143749999997,1653.7999999999997" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P3A2" data-to="P3CD" data-style="dotted" data-arrow-start="false" data-arrow-end="true" data-label="deep_coadd" points="1496.7183833333331,1451.1999999999998 1496.7183833333331,1523.4999999999998 1437.6872083333328,1523.4999999999998 1437.6872083333328,1591.7999999999997 1343.065708333333,1591.7999999999997 1343.065708333333,1653.7999999999997" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P4A2" data-to="P4C3" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="dia_source_visit,
+difference_image" points="1613.2570416666665,1707.5999999999997 1613.2570416666665,1719.5999999999997 963.0107083333334,1719.5999999999997 963.0107083333334,1789.5999999999997 831.1640416666664,1789.5999999999997 831.1640416666664,1848.1999999999996 1171.5015416666668,1848.1999999999996 1171.5015416666668,1958.1999999999994" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P4B" data-to="P4C3" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="ss_ephemerides" points="649.0393833333333,1146.8 649.0393833333333,1182.8 775.5261333333333,1182.8 775.5261333333332,1428.8999999999999 637.0530416666666,1428.8999999999999 637.0530416666666,1872.1999999999996 1010.4775416666665,1872.1999999999996 1010.4775416666666,1958.1999999999994" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P4A1" data-to="P4C3" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="visit_image" points="1333.3485499999997,1146.8 1333.3485499999997,1158.8 1098.7287166666665,1158.8 1098.7287166666665,1440.8999999999999 724.2990416666665,1440.8999999999999 724.2990416666665,1860.1999999999996 1090.9895416666668,1860.1999999999996 1090.9895416666666,1958.1999999999994" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P3A3" data-to="P4C4" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="object_patch" points="1072.0477083333333,1707.5999999999997 1072.0477083333333,1815.8999999999996 2132.5419416666664,1815.8999999999996 2132.5419416666664,1860.1999999999996 1655.7395416666666,1860.1999999999996 1655.7395416666666,1958.1999999999994" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P4A2" data-to="P4C4" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="difference_image" points="1711.467375,1707.5999999999997 1711.467375,1791.8999999999996 2224.7799416666667,1791.8999999999996 2224.7799416666667,1872.1999999999996 1733.2875416666666,1872.1999999999996 1733.2875416666666,1958.1999999999994" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P4A1" data-to="P4C4" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="visit_image" points="1604.8572166666663,1146.8 1604.8572166666663,1228.8 2406.7328583333333,1228.8 2406.7328583333333,1884.1999999999996 1810.8355416666664,1884.1999999999996 1810.8355416666664,1958.1999999999994" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P3A2" data-to="P3B" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="deep_coadd" points="1654.0373833333333,1451.1999999999998 1654.0373833333333,1499.4999999999998 2164.027441666666,1499.4999999999998 2164.027441666666,1803.8999999999996 2018.8332749999997,1803.8999999999996 2018.8332749999997,1848.1999999999996 1460.132208333333,1848.1999999999996 1460.132208333333,1958.1999999999994" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P3A3" data-to="P3B" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="object_all" points="973.0107083333334,1707.5999999999997 973.0107083333331,1836.1999999999996 1370.072875,1836.1999999999996 1370.072875,1958.1999999999994" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P3A3" data-to="P4A3" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="object_epoch" points="873.9737083333333,1707.5999999999997 873.9737083333333,1777.5999999999997 499.9168750000001,1777.5999999999997 499.9168750000001,1884.1999999999996 783.0072083333334,1884.1999999999996 783.0072083333334,1958.1999999999994" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P2EF" data-to="P4A3" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="stellar_motions" points="892.0128833333332,1146.8 892.0128833333332,1170.8 765.5261333333333,1170.8 765.5261333333332,1416.8999999999999 415.12370833333324,1416.8999999999999 415.12370833333324,1896.1999999999996 664.0488750000001,1896.1999999999996 664.0488750000002,1958.1999999999994" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P4C1" data-to="P4EF" data-style="dotted" data-arrow-start="false" data-arrow-end="true" data-label="pretty_coadd" points="1953.1302083333333,1707.5999999999997 1953.1302083333333,1779.8999999999996 2454.2328583333338,1779.8999999999996 2454.2328583333338,1896.1999999999996 2071.1090416666666,1896.1999999999996 2071.1090416666666,1958.1999999999994" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P4C3" data-to="P4D" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="ss_source_tract,
+dia_source_tract" points="1090.9895416666664,2011.9999999999995 1090.9895416666666,2128.5999999999995 843.6819666666665,2128.5999999999995 843.6819666666667,2190.5999999999995" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P4C2" data-to="P4D" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="associated_analysis_source" points="1247.27505,1451.1999999999998 1247.27505,1497.1999999999998 154.87737499999992,1497.1999999999998 154.87737499999992,2116.5999999999995 757.4272166666666,2116.5999999999995 757.4272166666666,2190.5999999999995" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P2EF" data-to="P4D" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="visit_table" points="829.8406333333332,1146.8 829.8406333333332,1158.8 729.4400083333333,1158.8 729.4400083333333,1404.8999999999999 69,1404.8999999999999 69,2128.5999999999995 671.1724666666667,2128.5999999999995 671.1724666666668,2190.5999999999995" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="edge-label" data-from="P1AB" data-to="P1C1" data-label="single_visit_star">
+  <rect x="703.2179166666665" y="229.1" width="96.05800000000002" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="751.2469166666665" y="244.25" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">single_visit_star</text>
+</g>
+<g class="edge-label" data-from="P1AB" data-to="P1D1" data-label="preliminary_visit_summary">
+  <rect x="485.9004166666664" y="229.1" width="144.76600000000002" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="558.2834166666664" y="244.25" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">preliminary_visit_summary</text>
+</g>
+<g class="edge-label" data-from="P1AB" data-to="P2C" data-label="preliminary_visit_summary,
+single_visit_star">
+  <rect x="861.2426666666664" y="214.8" width="147.14200000000002" height="44.6" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="934.8136666666664" y="237.10000000000002" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)"><tspan x="934.8136666666664" dy="-3.3000000000000007">preliminary_visit_summary,</tspan><tspan x="934.8136666666664" dy="14.3">single_visit_star</tspan></text>
+</g>
+<g class="edge-label" data-from="P1AB" data-to="P2A" data-label="preliminary_visit_summary">
+  <rect x="1196.9116666666664" y="402.9" width="144.76600000000002" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1269.2946666666664" y="418.04999999999995" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">preliminary_visit_summary</text>
+</g>
+<g class="edge-label" data-from="P1C1" data-to="P2A" data-label="isolated_star">
+  <rect x="1164.5094999999997" y="471.20000000000005" width="79.42600000000002" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1204.2224999999996" y="486.35" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">isolated_star</text>
+</g>
+<g class="edge-label" data-from="P1C1" data-to="P1QA" data-label="isolated_star_presources">
+  <rect x="785.8569166666665" y="471.20000000000005" width="142.39000000000004" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="857.0519166666666" y="486.35" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">isolated_star_presources</text>
+</g>
+<g class="edge-label" data-from="P1AB" data-to="P2D" data-label="preliminary_visit_image">
+  <rect x="1477.2661666666663" y="693.0000000000001" width="129.322" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1541.9271666666664" y="708.1500000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">preliminary_visit_image</text>
+</g>
+<g class="edge-label" data-from="P1C1" data-to="P2D" data-label="isolated_star">
+  <rect x="660.2901666666666" y="737.3000000000001" width="79.42600000000002" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="700.0031666666665" y="752.45" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">isolated_star</text>
+</g>
+<g class="edge-label" data-from="P2A" data-to="P2D" data-label="fgcm_photoCalib">
+  <rect x="1199.1986666666662" y="713.3000000000001" width="94.87" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1246.6336666666662" y="728.45" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">fgcm_photoCalib</text>
+</g>
+<g class="edge-label" data-from="P2C" data-to="P2D" data-label="gbdesAstrometricFit">
+  <rect x="1413.2661666666665" y="725.3000000000001" width="113.878" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1470.2051666666666" y="740.45" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">gbdesAstrometricFit</text>
+</g>
+<g class="edge-label" data-from="P1AB" data-to="P3A1" data-label="preliminary_visit_image">
+  <rect x="1549.2661666666663" y="913.4000000000002" width="129.322" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1613.9271666666664" y="928.5500000000002" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">preliminary_visit_image</text>
+</g>
+<g class="edge-label" data-from="P2D" data-to="P3A1" data-label="visit_summary">
+  <rect x="1027.1878833333333" y="969.7000000000002" width="85.36600000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1069.8708833333333" y="984.8500000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">visit_summary</text>
+</g>
+<g class="edge-label" data-from="P1AB" data-to="P4A1" data-label="preliminary_visit_image,
+background">
+  <rect x="1682.5881666666664" y="899.1000000000001" width="131.698" height="44.6" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1748.4371666666664" y="921.4000000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)"><tspan x="1748.4371666666664" dy="-3.3000000000000007">preliminary_visit_image,</tspan><tspan x="1748.4371666666664" dy="14.3">background</tspan></text>
+</g>
+<g class="edge-label" data-from="P2D" data-to="P4A1" data-label="visit_summary">
+  <rect x="1621.2661666666663" y="969.7000000000002" width="85.36600000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1663.9491666666663" y="984.8500000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">visit_summary</text>
+</g>
+<g class="edge-label" data-from="P1D1" data-to="P4B" data-label="preliminary_visit_table">
+  <rect x="326.9850583333332" y="949.4000000000001" width="124.57000000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="389.2700583333332" y="964.5500000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">preliminary_visit_table</text>
+</g>
+<g class="edge-label" data-from="P2D" data-to="P4B" data-label="visit_summary">
+  <rect x="416.7967249999999" y="981.7000000000002" width="85.36600000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="459.4797249999999" y="996.8500000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">visit_summary</text>
+</g>
+<g class="edge-label" data-from="P1D1" data-to="P2EF" data-label="preliminary_visit_table">
+  <rect x="507.1375583333332" y="911.1000000000001" width="124.57000000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="569.4225583333332" y="926.2500000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">preliminary_visit_table</text>
+</g>
+<g class="edge-label" data-from="P2D" data-to="P2EF" data-label="recalibrated_star,
+visit_summary">
+  <rect x="881.4610499999999" y="955.4000000000001" width="103.18600000000004" height="44.6" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="933.05405" y="977.7" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)"><tspan x="933.05405" dy="-3.3000000000000007">recalibrated_star,</tspan><tspan x="933.05405" dy="14.3">visit_summary</tspan></text>
+</g>
+<g class="edge-label" data-from="P3A1" data-to="P3A2" data-label="direct_warp,
+psf_matched_warp">
+  <rect x="1383.7910499999998" y="1259.8" width="106.75000000000001" height="44.6" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1437.1660499999998" y="1282.1" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)"><tspan x="1437.1660499999998" dy="-3.3000000000000007">direct_warp,</tspan><tspan x="1437.1660499999998" dy="14.3">psf_matched_warp</tspan></text>
+</g>
+<g class="edge-label" data-from="P2D" data-to="P3A2" data-label="visit_summary">
+  <rect x="1858.6799499999997" y="1191.5" width="85.36600000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1901.3629499999997" y="1206.65" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">visit_summary</text>
+</g>
+<g class="edge-label" data-from="P4A1" data-to="P4C2" data-label="source_all">
+  <rect x="1254.2400499999999" y="1274.1" width="68.73400000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1288.6070499999998" y="1289.25" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">source_all</text>
+</g>
+<g class="edge-label" data-from="P2EF" data-to="P4C2" data-label="visit_table,
+stellar_motions">
+  <rect x="1112.2287166666665" y="1259.8" width="88.93" height="44.6" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1156.6937166666664" y="1282.1" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)"><tspan x="1156.6937166666664" dy="-3.3000000000000007">visit_table,</tspan><tspan x="1156.6937166666664" dy="14.3">stellar_motions</tspan></text>
+</g>
+<g class="edge-label" data-from="P3A2" data-to="P4A2" data-label="template_coadd">
+  <rect x="1567.2570416666663" y="1530.4999999999998" width="91.30600000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1612.9100416666663" y="1545.6499999999999" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">template_coadd</text>
+</g>
+<g class="edge-label" data-from="P4A1" data-to="P4A2" data-label="visit_image">
+  <rect x="2104.394274999999" y="1462.1999999999998" width="69.92200000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="2139.355274999999" y="1477.35" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">visit_image</text>
+</g>
+<g class="edge-label" data-from="P3A2" data-to="P3A3" data-label="deep_coadd,
+cell_coadd">
+  <rect x="1200.908208333333" y="1516.1999999999998" width="79.42600000000002" height="44.6" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1240.621208333333" y="1538.4999999999998" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)"><tspan x="1240.621208333333" dy="-3.3000000000000007">deep_coadd,</tspan><tspan x="1240.621208333333" dy="14.3">cell_coadd</tspan></text>
+</g>
+<g class="edge-label" data-from="P3A1" data-to="P3A3" data-label="direct_warp">
+  <rect x="1016.0370499999999" y="1459.8999999999996" width="74.674" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1053.37405" y="1475.0499999999997" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">direct_warp</text>
+</g>
+<g class="edge-label" data-from="P3A2" data-to="P4C1" data-label="deep_coadd_visit_selection">
+  <rect x="1994.321441666666" y="1530.4999999999998" width="150.706" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="2069.674441666666" y="1545.6499999999999" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">deep_coadd_visit_selection</text>
+</g>
+<g class="edge-label" data-from="P4A1" data-to="P4C1" data-label="visit_image, skyCorr">
+  <rect x="2211.9582749999995" y="1486.1999999999998" width="114.47200000000002" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="2269.1942749999994" y="1501.35" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">visit_image, skyCorr</text>
+</g>
+<g class="edge-label" data-from="P3A2" data-to="P3CD" data-label="deep_coadd">
+  <rect x="1398.6872083333328" y="1530.4999999999998" width="77.05000000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1437.212208333333" y="1545.6499999999999" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">deep_coadd</text>
+</g>
+<g class="edge-label" data-from="P4A2" data-to="P4C3" data-label="dia_source_visit,
+difference_image">
+  <rect x="781.1640416666664" y="1796.5999999999997" width="99.62200000000001" height="44.6" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="830.9750416666665" y="1818.8999999999996" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)"><tspan x="830.9750416666665" dy="-3.3000000000000007">dia_source_visit,</tspan><tspan x="830.9750416666665" dy="14.3">difference_image</tspan></text>
+</g>
+<g class="edge-label" data-from="P4B" data-to="P4C3" data-label="ss_ephemerides">
+  <rect x="588.0530416666666" y="1740.2999999999997" width="97.24600000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="636.6760416666666" y="1755.4499999999998" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">ss_ephemerides</text>
+</g>
+<g class="edge-label" data-from="P4A1" data-to="P4C3" data-label="visit_image">
+  <rect x="689.2990416666665" y="1530.4999999999995" width="69.92200000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="724.2600416666666" y="1545.6499999999996" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">visit_image</text>
+</g>
+<g class="edge-label" data-from="P3A3" data-to="P4C4" data-label="object_patch">
+  <rect x="2093.0419416666664" y="1822.8999999999996" width="78.23800000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="2132.1609416666665" y="1838.0499999999997" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">object_patch</text>
+</g>
+<g class="edge-label" data-from="P4A2" data-to="P4C4" data-label="difference_image">
+  <rect x="2175.279941666666" y="1834.8999999999996" width="98.43400000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="2224.4969416666663" y="1850.0499999999997" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">difference_image</text>
+</g>
+<g class="edge-label" data-from="P4A1" data-to="P4C4" data-label="visit_image">
+  <rect x="2371.7328583333333" y="1742.5999999999995" width="69.92200000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="2406.693858333333" y="1757.7499999999995" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">visit_image</text>
+</g>
+<g class="edge-label" data-from="P3A2" data-to="P3B" data-label="deep_coadd">
+  <rect x="2125.027441666666" y="1742.5999999999995" width="77.05000000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="2163.5524416666663" y="1757.7499999999995" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">deep_coadd</text>
+</g>
+<g class="edge-label" data-from="P3A3" data-to="P3B" data-label="object_all">
+  <rect x="941.5107083333331" y="1798.8999999999996" width="62.79400000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="972.9077083333332" y="1814.0499999999997" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">object_all</text>
+</g>
+<g class="edge-label" data-from="P3A3" data-to="P4A3" data-label="object_epoch">
+  <rect x="458.9168750000001" y="1834.8999999999996" width="81.80200000000002" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="499.81787500000013" y="1850.0499999999997" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">object_epoch</text>
+</g>
+<g class="edge-label" data-from="P2EF" data-to="P4A3" data-label="stellar_motions">
+  <rect x="370.6237083333333" y="1802.5999999999995" width="88.93" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="415.08870833333333" y="1817.7499999999995" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">stellar_motions</text>
+</g>
+<g class="edge-label" data-from="P4C1" data-to="P4EF" data-label="pretty_coadd">
+  <rect x="2413.7328583333333" y="1858.8999999999996" width="80.614" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="2454.039858333333" y="1874.0499999999997" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">pretty_coadd</text>
+</g>
+<g class="edge-label" data-from="P4C3" data-to="P4D" data-label="ss_source_tract,
+dia_source_tract">
+  <rect x="1040.9895416666666" y="2076.9999999999995" width="99.62200000000003" height="44.6" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1090.8005416666665" y="2099.2999999999997" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)"><tspan x="1090.8005416666665" dy="-3.3000000000000007">ss_source_tract,</tspan><tspan x="1090.8005416666665" dy="14.3">dia_source_tract</tspan></text>
+</g>
+<g class="edge-label" data-from="P4C2" data-to="P4D" data-label="associated_analysis_source">
+  <rect x="76.37737500000004" y="2079.2999999999993" width="156.64600000000004" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="154.70037500000007" y="2094.4499999999994" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">associated_analysis_source</text>
+</g>
+<g class="edge-label" data-from="P2EF" data-to="P4D" data-label="visit_table">
+  <rect x="36.00000000000001" y="2046.9999999999995" width="65.17" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="68.58500000000001" y="2062.1499999999996" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">visit_table</text>
+</g>
+<g class="node" data-id="P1AB" data-label="step1a-step1b.yaml
+(Clusters: step1detector, step1b_visits)" data-shape="rectangle">
+  <rect x="876.2679999999997" y="84" width="261.28599999999994" height="53.800000000000004" rx="0" ry="0" fill="#1e3a8a" stroke="#60a5fa" stroke-width="2px" />
+  <text x="1006.9109999999996" y="110.9" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff"><tspan x="1006.9109999999996" dy="-3.9000000000000012">step1a-step1b.yaml</tspan><tspan x="1006.9109999999996" dy="16.900000000000002">(Clusters: step1detector, step1b_visits)</tspan></text>
+</g>
+<g class="node" data-id="P1C1" data-label="step1c1-isolated-stars.yaml
+(associateIsolatedStar only)" data-shape="rectangle">
+  <rect x="648.8624166666664" y="352.4" width="205.71099999999998" height="53.800000000000004" rx="0" ry="0" fill="#1e3a8a" stroke="#60a5fa" stroke-width="2px" />
+  <text x="751.7179166666664" y="379.29999999999995" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff"><tspan x="751.7179166666664" dy="-3.9000000000000012">step1c1-isolated-stars.yaml</tspan><tspan x="751.7179166666664" dy="16.900000000000002">(associateIsolatedStar only)</tspan></text>
+</g>
+<g class="node" data-id="P1D1" data-label="step1d1-visit-tables.yaml
+(makeInitialVisitTable / DetectorTable)" data-shape="rectangle">
+  <rect x="358.8354166666665" y="352.4" width="262.02699999999993" height="53.800000000000004" rx="0" ry="0" fill="#065f46" stroke="#34d399" stroke-width="2px" />
+  <text x="489.84891666666647" y="379.29999999999995" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff"><tspan x="489.84891666666647" dy="-3.9000000000000012">step1d1-visit-tables.yaml</tspan><tspan x="489.84891666666647" dy="16.900000000000002">(makeInitialVisitTable / DetectorTable)</tspan></text>
+</g>
+<g class="node" data-id="P2C" data-label="step2c.yaml
+(gbdesHealpix3AstrometricFit)" data-shape="rectangle">
+  <rect x="882.5734166666664" y="352.4" width="221.27199999999993" height="53.800000000000004" rx="0" ry="0" fill="#065f46" stroke="#34d399" stroke-width="2px" />
+  <text x="993.2094166666664" y="379.29999999999995" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff"><tspan x="993.2094166666664" dy="-3.9000000000000012">step2c.yaml</tspan><tspan x="993.2094166666664" dy="16.900000000000002">(gbdesHealpix3AstrometricFit)</tspan></text>
+</g>
+<g class="node" data-id="P2A" data-label="step2a.yaml
+(FGCM Global Fit - 60 CPUs / 480 GB)" data-shape="rectangle">
+  <rect x="1120.1311666666666" y="594.5" width="253.135" height="53.800000000000004" rx="0" ry="0" fill="#581c87" stroke="#c084fc" stroke-width="2px" />
+  <text x="1246.6986666666667" y="621.4" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff"><tspan x="1246.6986666666667" dy="-3.9000000000000012">step2a.yaml</tspan><tspan x="1246.6986666666667" dy="16.900000000000002">(FGCM Global Fit - 60 CPUs / 480 GB)</tspan></text>
+</g>
+<g class="node" data-id="P1QA" data-label="step1c2-step1d2-qa.yaml
+(Terminal Leaf: 60 GB Star Assoc QA + 1d Plots)" data-shape="rectangle">
+  <rect x="779.7161666666665" y="594.5" width="312.41499999999996" height="53.800000000000004" rx="0" ry="0" fill="#78350f" stroke="#fbbf24" stroke-width="2px" />
+  <text x="935.9236666666665" y="621.4" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff"><tspan x="935.9236666666665" dy="-3.9000000000000012">step1c2-step1d2-qa.yaml</tspan><tspan x="935.9236666666665" dy="16.900000000000002">(Terminal Leaf: 60 GB Star Assoc QA + 1d Plots)</tspan></text>
+</g>
+<g class="node" data-id="P2D" data-label="step2d.yaml
+(Clusters: step2d_refitpsf, step2d_visits + updateVisitSummary)" data-shape="rectangle">
+  <rect x="851.0932166666665" y="836.6" width="408.0039999999999" height="53.800000000000004" rx="0" ry="0" fill="#1e3a8a" stroke="#60a5fa" stroke-width="2px" />
+  <text x="1055.0952166666666" y="863.5" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff"><tspan x="1055.0952166666666" dy="-3.9000000000000012">step2d.yaml</tspan><tspan x="1055.0952166666666" dy="16.900000000000002">(Clusters: step2d_refitpsf, step2d_visits + updateVisitSummary)</tspan></text>
+</g>
+<g class="node" data-id="P3A1" data-label="step3a1-warps.yaml
+(Cluster: makeWarpTract)" data-shape="rectangle">
+  <rect x="1044.3573833333332" y="1093" width="193.11399999999998" height="53.800000000000004" rx="0" ry="0" fill="#1e3a8a" stroke="#60a5fa" stroke-width="2px" />
+  <text x="1140.9143833333333" y="1119.9" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff"><tspan x="1140.9143833333333" dy="-3.9000000000000012">step3a1-warps.yaml</tspan><tspan x="1140.9143833333333" dy="16.900000000000002">(Cluster: makeWarpTract)</tspan></text>
+</g>
+<g class="node" data-id="P4A1" data-label="step4a1-reprocess-skycorr.yaml
+(Clusters: skyCorrCluster, step4a_reprocess + Source Table)" data-shape="rectangle">
+  <rect x="1265.471383333333" y="1093" width="407.26299999999986" height="53.800000000000004" rx="0" ry="0" fill="#065f46" stroke="#34d399" stroke-width="2px" />
+  <text x="1469.102883333333" y="1119.9" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff"><tspan x="1469.102883333333" dy="-3.9000000000000012">step4a1-reprocess-skycorr.yaml</tspan><tspan x="1469.102883333333" dy="16.900000000000002">(Clusters: skyCorrCluster, step4a_reprocess + Source Table)</tspan></text>
+</g>
+<g class="node" data-id="P4B" data-label="step4b.yaml
+(generateEphemerides)" data-shape="rectangle">
+  <rect x="558.4103833333332" y="1093" width="181.25799999999998" height="53.800000000000004" rx="0" ry="0" fill="#065f46" stroke="#34d399" stroke-width="2px" />
+  <text x="649.0393833333333" y="1119.9" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff"><tspan x="649.0393833333333" dy="-3.9000000000000012">step4b.yaml</tspan><tspan x="649.0393833333333" dy="16.900000000000002">(generateEphemerides)</tspan></text>
+</g>
+<g class="node" data-id="P2EF" data-label="step2e-step2f.yaml
+(fitStellarMotion + Final Visit Tables)" data-shape="rectangle">
+  <rect x="767.6683833333332" y="1093" width="248.68899999999996" height="53.800000000000004" rx="0" ry="0" fill="#065f46" stroke="#34d399" stroke-width="2px" />
+  <text x="892.0128833333331" y="1119.9" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff"><tspan x="892.0128833333331" dy="-3.9000000000000012">step2e-step2f.yaml</tspan><tspan x="892.0128833333331" dy="16.900000000000002">(fitStellarMotion + Final Visit Tables)</tspan></text>
+</g>
+<g class="node" data-id="P3A2" data-label="step3a2-coadd-images.yaml
+(Cluster: coadd - Deep, Cell &amp; Template Coadds)" data-shape="rectangle">
+  <rect x="1391.8390499999998" y="1397.3999999999999" width="314.638" height="53.800000000000004" rx="0" ry="0" fill="#1e3a8a" stroke="#60a5fa" stroke-width="2px" />
+  <text x="1549.1580499999998" y="1424.3" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff"><tspan x="1549.1580499999998" dy="-3.9000000000000012">step3a2-coadd-images.yaml</tspan><tspan x="1549.1580499999998" dy="16.900000000000002">(Cluster: coadd - Deep, Cell &amp; Template Coadds)</tspan></text>
+</g>
+<g class="node" data-id="P4C2" data-label="step4c2-source-qa.yaml
+(associateAnalysisSource + QA)" data-shape="rectangle">
+  <rect x="1130.71105" y="1397.3999999999999" width="233.128" height="53.800000000000004" rx="0" ry="0" fill="#065f46" stroke="#34d399" stroke-width="2px" />
+  <text x="1247.27505" y="1424.3" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff"><tspan x="1247.27505" dy="-3.9000000000000012">step4c2-source-qa.yaml</tspan><tspan x="1247.27505" dy="16.900000000000002">(associateAnalysisSource + QA)</tspan></text>
+</g>
+<g class="node" data-id="P4A2" data-label="step4a2-diffim.yaml
+(Cluster: diffim + consolidateVisitDiaSource)" data-shape="rectangle">
+  <rect x="1515.0467083333333" y="1653.7999999999997" width="294.631" height="53.800000000000004" rx="0" ry="0" fill="#1e3a8a" stroke="#60a5fa" stroke-width="2px" />
+  <text x="1662.3622083333332" y="1680.6999999999998" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff"><tspan x="1662.3622083333332" dy="-3.9000000000000012">step4a2-diffim.yaml</tspan><tspan x="1662.3622083333332" dy="16.900000000000002">(Cluster: diffim + consolidateVisitDiaSource)</tspan></text>
+</g>
+<g class="node" data-id="P3A3" data-label="step3a3-multiband-objects.yaml
+(Scarlet + MultiProFit + Object Catalog + Shear + HealSparse)" data-shape="rectangle">
+  <rect x="774.9367083333333" y="1653.7999999999997" width="396.14799999999985" height="53.800000000000004" rx="0" ry="0" fill="#1e3a8a" stroke="#60a5fa" stroke-width="2px" />
+  <text x="973.0107083333332" y="1680.6999999999998" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff"><tspan x="973.0107083333332" dy="-3.9000000000000012">step3a3-multiband-objects.yaml</tspan><tspan x="973.0107083333332" dy="16.900000000000002">(Scarlet + MultiProFit + Object Catalog + Shear + HealSparse)</tspan></text>
+</g>
+<g class="node" data-id="P4C1" data-label="&quot;step4c1-pretty-coadds.yaml
+(Cluster: makeWarpTract [Pretty" data-shape="rectangle">
+  <rect x="1837.6777083333332" y="1653.7999999999997" width="230.90499999999994" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1953.130208333333" y="1680.6999999999998" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1953.130208333333" dy="-3.9000000000000012">&quot;step4c1-pretty-coadds.yaml</tspan><tspan x="1953.130208333333" dy="16.900000000000002">(Cluster: makeWarpTract [Pretty</tspan></text>
+</g>
+<g class="node" data-id="P3CD" data-label="step3c-step3d-hips-usdf.yaml
+(Optional USDF Leaf: Gray Coadds + HiPS)" data-shape="rectangle">
+  <rect x="1199.0847083333333" y="1653.7999999999997" width="287.962" height="53.800000000000004" rx="0" ry="0" fill="#374151" stroke="#9ca3af" stroke-width="2px" />
+  <text x="1343.0657083333333" y="1680.6999999999998" text-anchor="middle" font-size="13" font-weight="500" fill="#e5e7eb"><tspan x="1343.0657083333333" dy="-3.9000000000000012">step3c-step3d-hips-usdf.yaml</tspan><tspan x="1343.0657083333333" dy="16.900000000000002">(Optional USDF Leaf: Gray Coadds + HiPS)</tspan></text>
+</g>
+<g class="node" data-id="P4C3" data-label="step4c3-dia-assoc-forced.yaml
+(Clusters: association, step4c_forced_phot_dia)" data-shape="rectangle">
+  <rect x="929.9655416666665" y="1958.1999999999996" width="322.04799999999994" height="53.800000000000004" rx="0" ry="0" fill="#1e3a8a" stroke="#60a5fa" stroke-width="2px" />
+  <text x="1090.9895416666664" y="1985.0999999999997" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff"><tspan x="1090.9895416666664" dy="-3.9000000000000012">step4c3-dia-assoc-forced.yaml</tspan><tspan x="1090.9895416666664" dy="16.900000000000002">(Clusters: association, step4c_forced_phot_dia)</tspan></text>
+</g>
+<g class="node" data-id="P4C4" data-label="step4c4-object-forced.yaml
+(Terminal Leaf: step4c_forced_phot on Object)" data-shape="rectangle">
+  <rect x="1578.1915416666664" y="1958.1999999999996" width="310.19199999999995" height="53.800000000000004" rx="0" ry="0" fill="#78350f" stroke="#fbbf24" stroke-width="2px" />
+  <text x="1733.2875416666664" y="1985.0999999999997" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff"><tspan x="1733.2875416666664" dy="-3.9000000000000012">step4c4-object-forced.yaml</tspan><tspan x="1733.2875416666664" dy="16.900000000000002">(Terminal Leaf: step4c_forced_phot on Object)</tspan></text>
+</g>
+<g class="node" data-id="P3B" data-label="step3b.yaml
+(Terminal Leaf: Global Coadd Summary)" data-shape="rectangle">
+  <rect x="1280.0135416666665" y="1958.1999999999996" width="270.178" height="53.800000000000004" rx="0" ry="0" fill="#78350f" stroke="#fbbf24" stroke-width="2px" />
+  <text x="1415.1025416666664" y="1985.0999999999997" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff"><tspan x="1415.1025416666664" dy="-3.9000000000000012">step3b.yaml</tspan><tspan x="1415.1025416666664" dy="16.900000000000002">(Terminal Leaf: Global Coadd Summary)</tspan></text>
+</g>
+<g class="node" data-id="P4A3" data-label="step4a3-qa-star-object-match.yaml
+(Terminal Leaf: analyzeRecalibratedStarObjectMatch)" data-shape="rectangle">
+  <rect x="545.0905416666667" y="1958.1999999999996" width="356.8749999999999" height="53.800000000000004" rx="0" ry="0" fill="#78350f" stroke="#fbbf24" stroke-width="2px" />
+  <text x="723.5280416666667" y="1985.0999999999997" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff"><tspan x="723.5280416666667" dy="-3.9000000000000012">step4a3-qa-star-object-match.yaml</tspan><tspan x="723.5280416666667" dy="16.900000000000002">(Terminal Leaf: analyzeRecalibratedStarObjectMatch)</tspan></text>
+</g>
+<g class="node" data-id="P4EF" data-label="step4e-step4f-hips-usdf.yaml
+(Optional USDF Leaf: Pretty RGB + Color HiPS)" data-shape="rectangle">
+  <rect x="1916.3835416666664" y="1958.1999999999996" width="309.45099999999996" height="53.800000000000004" rx="0" ry="0" fill="#374151" stroke="#9ca3af" stroke-width="2px" />
+  <text x="2071.109041666666" y="1985.0999999999997" text-anchor="middle" font-size="13" font-weight="500" fill="#e5e7eb"><tspan x="2071.109041666666" dy="-3.9000000000000012">step4e-step4f-hips-usdf.yaml</tspan><tspan x="2071.109041666666" dy="16.900000000000002">(Optional USDF Leaf: Pretty RGB + Color HiPS)</tspan></text>
+</g>
+<g class="node" data-id="P4D" data-label="&quot;step4d.yaml
+(Terminal Global Leaf: consolidateSsTables [480 GB" data-shape="rectangle">
+  <rect x="584.9177166666667" y="2190.5999999999995" width="345.01899999999995" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="757.4272166666667" y="2217.4999999999995" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="757.4272166666667" dy="-3.9000000000000012">&quot;step4d.yaml</tspan><tspan x="757.4272166666667" dy="16.900000000000002">(Terminal Global Leaf: consolidateSsTables [480 GB</tspan></text>
+</g>
+</svg>

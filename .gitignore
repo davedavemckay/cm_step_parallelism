@@ -1,0 +1,12 @@
+# Campaign orchestrator runtime state & logs
+.campaign_state/
+*/.campaign_state/
+
+# Temporary files
+*.tmp
+*~
+.DS_Store
+
+# BPS submit directories if created locally
+submit/
+*/submit/
